@@ -1,4 +1,7 @@
-= Antora Default UI
+= Antora UI for Kaskada Docs 
+
+
+
 // Settings:
 :experimental:
 :hide-uri-scheme:
@@ -19,21 +22,19 @@
 :url-nvm-install: {url-nvm}#installation
 :url-source-maps: https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map
 
-image:{img-ci-status}[CI Status (GitLab CI), link={url-ci-pipelines}]
 
-This project is an archetype that demonstrates how to produce a UI bundle that can be used by {url-antora}[Antora] to generated a documentation site.
-You can see a preview of the default UI at {url-preview}.
+This repo contains the Antora UI components needed to build the Kaskada docs using antora. 
 
-While the default UI is ready to be used with Antora, the intent is that you'll fork it and customize it for your own needs.
-It's intentionally minimalistic so as to give you a good starting point without requiring too much effort to customize.
+The UI bundle this project produces is intended to be used with {url-antora}[Antora].
+The UI bundle contains the HTML templates (layouts, partials, and helpers), CSS, JavaScript, fonts, and _site-wide_ images.
+As such, it provides both the visual theme and user interactions for the documentation site.
 
-== Code of Conduct
+The base code for this project is supplied by the {url-antora-default-ui}[Antora Default UI], with Kaskada-specific components templated over the top.
 
-The Antora project and its project spaces are governed by our https://gitlab.com/antora/antora/-/blob/HEAD/CODE-OF-CONDUCT.adoc[Code of Conduct].
-By participating, you're agreeing to honor this code.
-Let's work together to make this a welcoming, professional, inclusive, and safe environment for everyone.
 
-== Use the Default UI
+
+[#usage]
+== Usage
 
 If you want to simply use the default UI for your Antora-generated site, add the following UI configuration to your playbook:
 
@@ -41,7 +42,7 @@ If you want to simply use the default UI for your Antora-generated site, add the
 ----
 ui:
   bundle:
-    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    url: https://github.com/kaskada-au/docs-ui/releases/latest/download/ui-bundle.zip
     snapshot: true
 ----
 
@@ -214,6 +215,8 @@ Copyright (C) 2017-present OpenDevise Inc. and the Antora Project.
 Use of this software is granted under the terms of the https://www.mozilla.org/en-US/MPL/2.0/[Mozilla Public License Version 2.0] (MPL-2.0).
 See link:LICENSE[] to find the full license text.
 
-== Authors
 
-Development of Antora is led and sponsored by {url-opendevise}[OpenDevise Inc].
+=== Branding and design
+
+Copyright (C) the Kaskada Project Authors 2023-present.
+All rights reserved.
