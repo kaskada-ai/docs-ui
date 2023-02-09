@@ -42,7 +42,7 @@ jobs:
    name: UI Bundle Build 
    runs-on: ubuntu-latest
    needs: [ui_bundle_skip]
-   if: needs.ui_bundle_skip.outputs.shjould_skip != 'true'
+   if: needs.ui_bundle_skip.outputs.should_skip != 'true'
    steps: 
     - uses: actions/checkout@v3
     - name: Install Node 
