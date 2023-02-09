@@ -42,7 +42,7 @@ If you want to simply use the default UI for your Antora-generated site, add the
 ----
 ui:
   bundle:
-    url: https://github.com/kaskada-au/docs-ui/releases/latest/download/ui-bundle.zip
+    url: https://github.com/kaskada-ai/docs-ui/releases/latest/download/ui-bundle.zip
     snapshot: true
 ----
 
