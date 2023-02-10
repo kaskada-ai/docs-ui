@@ -30,7 +30,7 @@ jobs:
           node-version: 16
 
       - name: Install node dependencies
-        run: npm install --quiet --no-progress && node_modules/.bin/patch-package
+        run: npm install --quiet --no-progress
 
       - name: Lint
         run: node_modules/.bin/gulp lint
