@@ -22,7 +22,6 @@ jobs:
   ui_bundle_build:
     name: UI Bundle Build
     runs-on: ubuntu-latest
-    needs: [ui_bundle_skip]
     steps:
       - uses: actions/checkout@v3
       - name: Install Node
