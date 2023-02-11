@@ -13,9 +13,7 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "scripts": {
-    "postinstall": "patch-package"
-  },
+  "scripts": {},
   "devDependencies": {
     "@asciidoctor/core": "~2.2",
     "@fontsource/roboto": "~4.5",
@@ -42,10 +40,8 @@
     "gulp-uglify": "~3.0",
     "gulp-vinyl-zip": "~2.2",
     "handlebars": "~4.7",
-    "highlight.js": "9.18.3",
     "js-yaml": "~3.13",
     "merge-stream": "~2.0",
-    "patch-package": "^6.4.7",
     "postcss-calc": "~7.0",
     "postcss-custom-properties": "~9.1",
     "postcss-import": "~12.0",
