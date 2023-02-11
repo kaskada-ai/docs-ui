@@ -45,3 +45,9 @@ jobs:
           retention-days: 14
           path: |
             build/ui-bundle.zip
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: build/ui-bundle.zip
