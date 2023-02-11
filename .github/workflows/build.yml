@@ -16,7 +16,8 @@ concurrency:
 
 permissions:
   actions: write
-  contents: read
+  contents: write
+  discussions: write
 
 name: UI Bundle CI
 
