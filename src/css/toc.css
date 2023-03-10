@@ -89,8 +89,8 @@
 }
 
 .toc .toc-menu a.is-active {
-  border-left-color: var(--link-font-color);
-  color: var(--doc-font-color);
+  border-left-color: var(--color-kaskada-primary);
+  color: var(--color-kaskada-gray);
 }
 
 .sidebar.toc .toc-menu a:focus {
