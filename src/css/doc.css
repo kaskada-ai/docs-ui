@@ -88,6 +88,7 @@
   font-size: 0.8em;
   font-weight: normal;
   padding-top: 0.05em;
+  color: inherit;
 }
 
 .doc h1 .anchor::before,
@@ -121,6 +122,24 @@
   color: var(--link_hover-font-color);
 }
 
+.doc h1 a,
+.doc h2 a,
+.doc h3 a,
+.doc h4 a,
+.doc h5 a,
+.doc h6 a {
+  color: inherit;
+}
+
+.doc h1 a:hover,
+.doc h2 a:hover,
+.doc h3 a:hover,
+.doc h4 a:hover,
+.doc h5 a:hover,
+.doc h6 a:hover {
+  color: inherit;
+}
+
 .doc a.bare {
   hyphens: none;
 }
@@ -139,9 +158,7 @@
 .doc .colist > table code {
   color: var(--code-font-color);
   background: var(--code-background);
-  border-radius: 0.25em;
-  font-size: 0.95em;
-  padding: 0.125em 0.25em;
+  font-size: 0.875em;
 }
 
 .doc code,
@@ -150,8 +167,8 @@
 }
 
 .doc pre {
-  font-size: calc(16 / var(--rem-base) * 1rem);
-  line-height: 1.5;
+  font-size: 0.875rem;
+  line-height: 1.4em;
   margin: 0;
 }
 
@@ -352,8 +369,10 @@
 }
 
 .doc .admonitionblock td.content {
-  padding: 1rem 1rem 0.75rem;
-  background: var(--admonition-background);
+  padding: 1.5rem;
+  background: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   width: 100%;
   word-wrap: anywhere;
 }
@@ -361,12 +380,12 @@
 .doc .admonitionblock .icon {
   position: absolute;
   top: 0;
-  left: 0;
-  font-size: calc(15 / var(--rem-base) * 1rem);
-  padding: 0 0.5rem;
-  height: 1.25rem;
-  line-height: 1;
-  font-weight: var(--admonition-label-font-weight);
+  left: 1.5rem;
+  font-family: (--sora-font-family);
+  font-size: 0.75rem;
+  line-height: 1.33em;
+  font-weight: 600;
+  padding: 0.5rem 0.5rem;
   text-transform: uppercase;
   border-radius: 0.45rem;
   transform: translate(-0.5rem, -50%);
@@ -729,6 +748,7 @@
   box-shadow: inset 0 0 1.75px var(--pre-border-color);
   display: block;
   overflow-x: auto;
+  border-radius: 10px;
   padding: 0.75rem;
 }
 
@@ -927,7 +947,9 @@
   background: var(--kbd-background);
   border: 1px solid var(--kbd-border-color);
   border-radius: 0.25em;
-  box-shadow: 0 1px 0 var(--kbd-border-color), 0 0 0 0.1em var(--body-background) inset;
+  box-shadow:
+    0 1px 0 var(--kbd-border-color),
+    0 0 0 0.1em var(--body-background) inset;
   padding: 0.25em 0.5em;
   vertical-align: text-bottom;
   white-space: nowrap; /* effectively ignores hyphens setting */
