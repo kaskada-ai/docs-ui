@@ -16,6 +16,7 @@
   "scripts": {},
   "devDependencies": {
     "@asciidoctor/core": "~2.2",
+    "@asciidoctor/tabs": "^1.0.0-beta.3",
     "@fontsource/noto-sans": "^4.5.11",
     "@fontsource/sora": "^4.5.12",
     "@fontsource/source-code-pro": "^4.5.14",
