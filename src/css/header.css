@@ -127,6 +127,10 @@ body {
   text-transform: uppercase;
 }
 
+.navbar-item-lower-case {
+  text-transform: none !important;
+}
+
 .navbar-item:hover,
 .navbar-link:hover {
   color: var(--color-kaskada-primary);
