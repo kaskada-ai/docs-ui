@@ -98,11 +98,11 @@ body {
     margin-top ease-out 0.25s 0.25s;
 }
 
-.navbar-burger span+span {
+.navbar-burger span + span {
   margin-top: 0.25rem;
 }
 
-.navbar-burger.is-active span+span {
+.navbar-burger.is-active span + span {
   margin-top: -1.5px;
 }
 
