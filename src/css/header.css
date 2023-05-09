@@ -142,8 +142,13 @@ body {
   align-items: center;
 }
 
+.navbar-item.icons .navbar-link {
+  font-size: 1rem;
+}
+
 .navbar-item.icons .navbar-link:not(:last-child) {
-  padding-right: 4px;
+  padding-right: 0;
+  margin-right: 4px;
 }
 
 .navbar-link {
